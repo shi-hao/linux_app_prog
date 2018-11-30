@@ -5,10 +5,6 @@
  *再次，对所有的参数重复调用va_arg() 
  *最后，调用va_end()传递va_list对完成后的清除是必须的。 
  *
- *时间：2011年8月17日22:34:04
- *作者：张超
- *Email:uestczhangchao@gmail.com
- *
  */
 
    
