@@ -3,6 +3,7 @@
 /*
  * call the shell command in C
  * preety simple
+ * system()
  */
 
 int main(){
