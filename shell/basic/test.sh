@@ -7,16 +7,25 @@
 
 ###############################################
 #定义变量 var=value  取变量值 $var  
-x=10 y=20
-dollar=$
+x=10 
+y=20.12
+name1="bob"
+name2=bil
+name3=t
 
-#shell的变量是字符串变量
-s=$x$y'$'
-ss=$x'1234'
+echo $x
+echo $y
+echo $name1
+echo $name2
+echo $name3
 
-echo $s
-echo $ss
-echo $dollar
+#变量合并
+sum=$name1$name2
+
+echo $sum
+
+#双引号内取变量值
+echo "i am $name1"
 
 ##################################################
 #eval command argument
@@ -25,27 +34,31 @@ eval ls -l
 
 ####################################################
 #if
-if 1 ; then
+if []; then
 echo $x
 else
 echo $y
 fi
 
 #check the dir in home path, if not exist, create it
-if [ ! -d $HOME"/mmtest" ];then
-	echo $HOME"/mmtest not exist"
-	mkdir $HOME/mmtest
+dirname="mmtest"
+fullDirName="$HOME/$dirname"
+targetfile="$fullDirName/test.sh"
+
+if [ ! -d $fullDirName ];then
+	echo "$fullDirName not exist"
+	mkdir $fullDirName
 else
-	echo $HOME"/mmtest exist"
+	echo "$fullDirName exist"
 fi
 
-cp   ./*  $HOME/mmtest
-cat  ./test.sh >> $HOME/mmtest/test.sh
+cp   ./*		  $fullDirName
+cat  ./test.sh >> $targetfile
 
-#grep
-string='boy2'
-filename='1.txt'
-if grep -q $string $filename  ;then 
+#grep a file whether contain the string
+targetSTR="boy"
+filename="1.txt"
+if grep -q $targetSTR  $filename  ;then 
    echo "OK";
 else
    echo "NOT OK";
@@ -59,3 +72,6 @@ fi
 #timestampe
 timestamp=$(date +%s)
 echo $timestamp
+
+##############
+cp  -r  ./2/*  ./1

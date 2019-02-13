@@ -37,4 +37,11 @@
 # 
 # Here is a good sed reference.
 
-sed '/#start/,/#end/d' 1.txt > 2.txt
+startSTR="#start"
+endSTR="#end"
+
+#if using shell variable in sed, please using "" not ''
+sed "/$startSTR/,/$endSTR/d" 1.txt > 2.txt
+
+#this also works
+#sed '/#start/,/#end/d' 1.txt > 2.txt
