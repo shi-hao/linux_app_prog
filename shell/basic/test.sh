@@ -12,6 +12,7 @@ y=20.12
 name1="bob"
 name2=bil
 name3=t
+name3=tf
 
 echo $x
 echo $y
@@ -52,8 +53,8 @@ else
 	echo "$fullDirName exist"
 fi
 
-cp   ./*		  $fullDirName
-cat  ./test.sh >> $targetfile
+cp   ./*		    $fullDirName
+cat  ./test.sh  >>  $targetfile
 
 #grep a file whether contain the string
 targetSTR="boy"
@@ -72,6 +73,3 @@ fi
 #timestampe
 timestamp=$(date +%s)
 echo $timestamp
-
-##############
-cp  -r  ./2/*  ./1
