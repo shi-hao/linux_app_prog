@@ -94,3 +94,6 @@ echo $output_str
 #eval 相较于 method 1的好处在于，shell指令依然会在命令行输出
 output_str=eval ls -l
 echo $output_str
+
+
+
