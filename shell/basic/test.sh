@@ -6,7 +6,8 @@
 #====================================================
 
 ###############################################
-#定义变量 var=value  取变量值 $var  
+#定义变量 var=value  取变量值$var,
+#变量名和值之间不能有空格！！！！！！！！！！！！！！！！！  
 x=10 
 y=20.12
 name1="bob"
@@ -29,8 +30,6 @@ echo $sum
 echo "i am $name1"
 
 ##################################################
-#eval command argument
-eval ls -l
 
 
 ####################################################
@@ -73,3 +72,25 @@ fi
 #timestampe
 timestamp=$(date +%s)
 echo $timestamp
+
+
+###################################################
+#jude the shell command whether succeed through get $?
+find dd   #
+if [ $? -eq 0 ]; then
+    echo OK
+else
+    echo FAIL
+fi
+
+#get the shell command output
+#ls -l
+
+#method 1
+output_str=$(ls -l)
+echo $output_str
+
+#method 2
+#eval 相较于 method 1的好处在于，shell指令依然会在命令行输出
+output_str=eval ls -l
+echo $output_str
