@@ -8,7 +8,7 @@ settting --> region&language --> manage installed languages --> install/remove l
 keyboard input method system选择ibus。    
   
 ## bugs  
-1. 中文输入候选词无法使用数字键选择，使用数字键选择词语后，输入崩溃。    
+1.中文输入候选词无法使用数字键选择，使用数字键选择词语后，输入崩溃。    
 进入ibus的github官网，查看issuse，发现有人已经提出此问题。    
   
 解决方法：    
