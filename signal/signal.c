@@ -8,18 +8,6 @@
 
 void sig_handler(int signo);
 
-int sample1(){
-	printf("i am sample1\n");
-}
-
-int sample2(){
-	printf("i am sample2\n");
-}
-
-int sample3(){
-	printf("i am sample3\n");
-}
-
 unsigned char* signal_list[63] = {
 	" SIGHUP	 ",  "  SIGINT	    ",  " SIGQUIT 	 ","    SIGILL	   ","   SIGTRAP",   
 	" SIGABRT	 ",  "  SIGBUS	    ",  " SIGFPE     ","    SIGKILL	   ","   SIGUSR1",
@@ -40,11 +28,12 @@ int main(int argc, char* argv[])
 {
 	int signal_num=0;
 	if(argc < 2){
-		printf("\nplease input the signal number:kill -l \n ");
+		printf("\nplease input the signal number:using kill -l to check the signal number\n ");
 		//system(" kill -l ");
 		//system(" ps ");
 		return -1;
 	}
+
 	signal_num = atoi(argv[1]);
 	if(signal_num >=1 && signal_num <= 64)
 		printf("main is waiting for a signal %d:%s\n", signal_num, signal_list[signal_num - 1]);
@@ -54,7 +43,7 @@ int main(int argc, char* argv[])
 		return -1;
 	}
 
-	//定义信号处理函数
+	//定义信号触发处理函数
 	if(signal(signal_num, sig_handler) == SIG_ERR){
 		perror("signal errror");
 		exit(EXIT_FAILURE);
@@ -63,7 +52,7 @@ int main(int argc, char* argv[])
 	//屏蔽信号
 	signal(SIGCHLD,SIG_IGN);
 
-	for(; ;);//有时间让我们发送信号
+	for(; ;);//waiting
 
 	return 0;
 }
