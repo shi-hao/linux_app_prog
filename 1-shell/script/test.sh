@@ -114,3 +114,5 @@ echo "数组元素个数为: ${#ip_array[@]}"
 echo "please inpute a int"
 read num
 echo "$num"
+
+####################
