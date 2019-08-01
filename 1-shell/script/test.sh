@@ -116,3 +116,12 @@ read num
 echo "$num"
 
 ####################
+# read txt file
+cat 1.txt | while read line
+do
+echo $line
+echo $line|cut -d" " -f1 
+echo $line|cut -d" " -f2 
+echo $line|cut -d" " -f3 
+echo $line|cut -d" " -f4 
+done
