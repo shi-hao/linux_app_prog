@@ -78,9 +78,15 @@ else
     echo FAIL
 fi
 
-# get the shell command output
-# ls -l
+#juding ping succeed or failed
+ping -c 1 www.rtshihha.com
+if [ $? -eq 0 ]; then
+    echo OK
+else
+    echo FAIL
+fi
 
+# get the shell command output
 # method 1
 output_str=$(ls -l)
 echo $output_str
@@ -90,14 +96,6 @@ echo $output_str
 output_str=eval ls -l
 echo $output_str
 
-#juding ping result
-#output_str=eval ping -c 1 11.15.244.80
-output_str=eval ping -c 1 www.rtshihha.com
-if [ $? -eq 0 ]; then
-    echo OK
-else
-    echo FAIL
-fi
 #####################################################################
 # 数组
 
