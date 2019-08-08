@@ -98,7 +98,6 @@ echo $output_str
 
 #####################################################################
 # 数组
-
 ip_array=("192.168.1.1" "11.2.16.160")
 mask_array=("255.255.255.0" "255.255.255.192")
 gw_array=("192.168.1.1" "11.2.16.254")
@@ -107,6 +106,7 @@ gw_array=("192.168.1.1" "11.2.16.254")
 # 读取指定的元素
 echo ${ip_array[0]}
 
+#数组增加元素
 ip_array+=("190.0.0.1")
 
 # 获取数组中的所有元素
@@ -125,11 +125,20 @@ echo "$num"
 
 ####################
 # read txt file
-cat 1.txt | while read line
+while read line
 do
-echo $line
-echo $line|cut -d" " -f1 
-echo $line|cut -d" " -f2 
-echo $line|cut -d" " -f3 
-echo $line|cut -d" " -f4 
-done
+	echo $line
+done <./1.txt
+
+###################################3
+# Split string
+mystr="good bad ugly"
+
+# IFS--预定义的分隔符
+OLD_IFS=$IFS
+IFS=" " #将分隔符设置为空格
+arr=($mystr)
+echo ${arr[0]}
+echo ${arr[1]}
+IFS=$OLD_IFS #还原预定义的分割符号
+
