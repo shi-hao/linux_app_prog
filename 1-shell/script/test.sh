@@ -148,3 +148,13 @@ echo $#   #参数个数
 if [ $# -ge 1 ];then
 	echo $1   #第一个参数
 fi
+
+#######################################
+fileName=/home/sss/data/
+
+if [[ $fileName =~ "hk" ]]
+then
+    echo "$fileName include hk"
+else
+    echo "not include"
+fi
