@@ -21,4 +21,4 @@ umount  <disk_partition>
 
 
 #查看磁盘挂载到文件系统中的位置（路径）
-df
+df  -lh
