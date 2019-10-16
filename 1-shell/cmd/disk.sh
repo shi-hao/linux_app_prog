@@ -11,6 +11,7 @@ sudo fdisk  <disk_name>
 d  delete partition
 w  save and exit
 
+
 #格式化磁盘，make file system
 #可以格式化磁盘，也可以是某个分区
 mkfs -t <file_system_type>  <disk>
