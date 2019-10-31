@@ -158,3 +158,17 @@ then
 else
     echo "not include"
 fi
+
+
+##############################
+#yellow color (33m), italic (3m) AND underlined (4m)
+printf "\e[3;4;33mthis is a test\n\e[0m"
+printf "\e[4mthis is a test\n\e[0m"
+
+printf "%-5s%-10s\n" ID INTER
+
+printf "\033[4m%-10s%-10s\n\033[0m" "Command" "failed"
+
+printf "%-10s%-10s\n" "Name" "Age"
+printf "\033[4m%-10s%-10s\n\033[0m" "bob" "30"
+printf "\033[4m%-10s%-10s\n\033[0m" "bob" "30"
