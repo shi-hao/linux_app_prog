@@ -172,3 +172,20 @@ printf "\033[4m%-10s%-10s\n\033[0m" "Command" "failed"
 printf "%-10s%-10s\n" "Name" "Age"
 printf "\033[4m%-10s%-10s\n\033[0m" "bob" "30"
 printf "\033[4m%-10s%-10s\n\033[0m" "bob" "30"
+
+########################################
+if [ $# -eq 0 ];
+then
+    echo usage
+	exit
+else 
+	echo $#
+fi
+###########################################333
+declare -A dic
+dic=(["key1"]="value1" ["key2"]="value2" ["key3"]="value3")
+    
+# 打印指定key的值
+#echo ${dic["key1"]}
+echo ${dic["key2"]}
+#echo ${dic["key3"]}
