@@ -2,7 +2,7 @@
 
 /*
  * call the shell command in C
- * preety simple
+ * pretty simple
  * system()
  */
 
