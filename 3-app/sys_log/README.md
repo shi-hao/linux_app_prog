@@ -33,6 +33,7 @@ more/less   syslog
 vim         syslog
 
 more/less   auth.log
+tail -f     syslog    #可以实时查看文件更新
 
 5.dmesg
 dmesg命令可以查看系统硬件插拔信息，文件挂载信息等系统信息。
