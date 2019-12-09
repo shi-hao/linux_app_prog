@@ -39,7 +39,7 @@ core 0-1  0x3
 taskset  0x1  my_program    
     
 ## using top command to look up the core usage    
-top -H the press 1    
+top -H then press 1    
   
 ## test  
 ./main.elf  
