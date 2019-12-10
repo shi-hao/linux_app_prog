@@ -36,10 +36,12 @@ core 0    0x1
 core 0-7  0xff      
 core 0-1  0x3      
   
-taskset  0x1  my_program      
+taskset  0x1  /home/main      
   
 assigning a cpu core to an exsiting program  
 taskset -p <core mask>  <program pid>  
+
+taskset -p 0x3 1150
       
 ## using top command to look up the core usage      
 top -H then press 1      

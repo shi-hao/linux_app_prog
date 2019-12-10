@@ -2,14 +2,13 @@
 #include <stdlib.h>
 #include <pthread.h>
 
-void *print_message_function( void *ptr )
+void *thread_function( void *ptr )
 {
 	long i=0, j=0, sum=0;
 	while(1){
 		i++;
 		j++;
 		sum = i + j;
-		printf("this is thread 1:%ld\n", sum);
 	}
 }
 
@@ -19,7 +18,7 @@ void main(){
 	int  iret1;
 
 	/* Create independent threads each of which will execute function */
-	iret1 = pthread_create( &thread1, NULL, print_message_function,(void*) message1);
+	iret1 = pthread_create( &thread1, NULL, thread_function,(void*) message1);
 	if(iret1)
 	{
 		fprintf(stderr,"Error - pthread_create() return code: %d\n",iret1);
