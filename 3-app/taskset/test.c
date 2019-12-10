@@ -9,6 +9,7 @@ void *print_message_function( void *ptr )
 		i++;
 		j++;
 		sum = i + j;
+		printf("this is thread 1:%ld\n", sum);
 	}
 }
 
