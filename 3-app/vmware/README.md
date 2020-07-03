@@ -1,7 +1,6 @@
 # vmware   
 install ubuntu on virtual machine created by vmware software.    
   
-  
 (1)vmware  
 安装vmware，并创建vmware虚拟机。    
   
