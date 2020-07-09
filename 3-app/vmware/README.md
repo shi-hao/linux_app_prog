@@ -15,7 +15,6 @@ install ubuntu on virtual machine created by vmware software.
 (4)安装vmware-tools      
 之前vmware-tools需要使用vmware附带的tool工具安装到系统上，目前ubuntu可以    
 使用apt-get intall来安装vmware-tools。     
-    
   
 ## shit troubles  
 因为开发机在内网，需要安装vmware workstation软件，并创建ubuntu虚拟机，但是虚拟  
