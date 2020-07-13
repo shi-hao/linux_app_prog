@@ -1,6 +1,7 @@
 #查看linux硬件信息，可能需要root权限  
 lshw  
 sudo lshw  
+sudo lshw -short
  
 <pre>
 bleach-thinkpad-x1-carbon-5th  
