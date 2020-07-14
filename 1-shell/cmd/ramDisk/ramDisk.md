@@ -35,3 +35,18 @@ mount -t tmpfs -o size=512m tmpfs /mnt/ramdisk
 可选操作，将配置命令添加到fstab，重启设备后，可以自动创建ram disk。  
 tmpfs   /mnt/ramdisk  tmpfs   nodev,nosuid,noexec,nodiratime,size=1024M   0   0  
   
+
+## ram disk write/read speed test
+(1)create dir and mount
+mkdir /media/ram
+mount -t tmpfs -o size=1G tmpfs /media/ram/
+
+(2)write speed test
+dd if=/dev/zero of=/media/ram/zero bs=4k count=10000
+
+(3)read speed test
+dd if=/media/ram/zero of=/dev/null bs=4k count=10000
+
+(4)remove test file
+rm /media/ram/zero
+
