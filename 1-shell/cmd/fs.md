@@ -21,12 +21,14 @@ drwxrwxr-x 2 bleach bleach 4.0K Jun 28  2019 sed
 ## 查看文件占用大小，du-disk usage      
 du dir      
 <pre>    
+du  cmd
 16	cmd/ramDisk    
 60	cmd    
 </pre>    
     
 du -h dir      
 <pre>    
+du  -h cmd
 16K	cmd/ramDisk    
 60K	cmd    
 </pre>    
@@ -34,6 +36,7 @@ du -h dir
   
 du -ch dir  
 <pre>    
+du  -ch cmd
 16K	cmd/ramDisk  
 60K	cmd/  
 60K	total  
