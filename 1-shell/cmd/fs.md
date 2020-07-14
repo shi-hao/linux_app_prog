@@ -4,6 +4,6 @@
 ls -lh  
   
   
-## 查看文件占用大小，du disk usage  
+## 查看文件占用大小，du-disk usage  
 du dir  
 du -h dir  

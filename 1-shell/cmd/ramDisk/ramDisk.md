@@ -28,6 +28,8 @@ mkdir /mnt/ramdisk
 (3)挂载目录到ram  
 mount -t [TYPE] -o size=[SIZE] [FSTYPE] [MOUNTPOINT]  
 mount -t tmpfs -o size=512m tmpfs /mnt/ramdisk  
+
+使用df -ah查看挂载的文件系统  
   
 (4)添加到fstab  
 可选操作，将配置命令添加到fstab，重启设备后，可以自动创建ram disk。  
