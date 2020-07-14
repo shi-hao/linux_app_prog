@@ -1,4 +1,6 @@
-# 查看磁盘及分区    
+# 磁盘disk
+
+## 查看磁盘及分区    
 fdisk:find disk  
 (1)可以查看系统所有的磁盘和分区    
 sudo fdisk -l    
@@ -11,17 +13,17 @@ d  delete partition
 w  save and exit    
     
     
-# 格式化磁盘  
+## 格式化磁盘  
 mkfs:make file system    
 可以格式化磁盘，也可以是某个分区    
 mkfs -t <file_system_type>  <disk>    
     
     
-# 挂载磁盘    
+## 挂载磁盘    
 mount/umount  
 磁盘接入系统后，将其挂载到文件系统的某个路径下，才能使用    
 mount   <disk_partition>   <file_dir>    
 umount  <disk_partition>    
     
-# 查看磁盘挂载到文件系统中的位置（路径）    
+## 查看磁盘挂载到文件系统中的位置（路径）    
 df  -lh    
