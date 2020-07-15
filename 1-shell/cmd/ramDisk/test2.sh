@@ -8,7 +8,7 @@ dir=/home/bleach/ramdisk
 
 #create dir and mount
 mkdir $dir
-mount -t tmpfs -o size=1G tmpfs $dir
+sudo mount -t tmpfs -o size=1G tmpfs $dir
 
 #switch to dir
 cd $dir
@@ -20,7 +20,7 @@ ioping -S64M -L -s4k -W -c 10 .
 ioping -A -s16k -c 10 .
 
 #umount the dir
-umount $dir
+sudo umount $dir
 
 ##########################################################
 #test disk write/read speed
