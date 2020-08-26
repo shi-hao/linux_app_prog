@@ -1,4 +1,9 @@
 # linux hardwore
+
+lshw
+lscpu
+top
+
 ## 查看linux硬件信息，可能需要root权限    
 lshw    
 sudo lshw    
