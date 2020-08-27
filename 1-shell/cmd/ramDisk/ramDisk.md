@@ -7,13 +7,13 @@
 ## Ram Disk基本原理  
 Ram Disk简单理解，就是在主机的RAM上创建文件系统，可以用来存储文件数据，主要有  
 两种类型，ramfs和tmpfs，其实比较容易理解，就是创建一个目录，将这个目录挂载到  
-RAM上，正常情况下是挂载到ROM上。  
+RAM上。  
   
 ## 好处  
 加速数据访问速度，提升性能。  
   
 ## Ram Disk大小  
-tmpfs最大大小不能超过最大RAM的一半，经过在ubuntu16上测试发现，并不是这样。    
+tmpfs最大不能超过最大RAM的一半，经过在ubuntu16上测试发现，并不是这样。    
 tmpfs和ramfs没有大小限制。  
   
 创建并挂载了一个ram disk，并不代表被挂载的ram空间已经被使用，使用量的大小以文  
@@ -50,4 +50,3 @@ dd if=/media/ram/zero of=/dev/null bs=4k count=10000
 
 (4)remove test file
 rm /media/ram/zero
-
