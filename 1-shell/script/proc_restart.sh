@@ -2,10 +2,10 @@
 
 for((;;))
 do 
-	#excute proc  >> proc.log
+	./mproc.sh >> m.log &
 	mPID=$!
 	echo $mPID
 	sleep 10
-	#kill $mPID
+	kill -9 $mPID
 done
 
