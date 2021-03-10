@@ -4,7 +4,7 @@ lshw
 lscpu
 top
 
-## 查看linux硬件信息，可能需要root权限    
+## 1.查看linux硬件信息，可能需要root权限    
 lshw    
 sudo lshw    
 sudo lshw -short  
@@ -25,7 +25,7 @@ H/W path        Device      Class          Description
 /0/4c/1                     memory         8GiB DIMM Synchronous 2133 MHz (0.5 ns)  
 </pre>  
     
-## 查看cpu详细信息    
+## 2.查看cpu详细信息    
 lscpu    
     
 <pre>   
@@ -55,7 +55,7 @@ L3 cache:            3072K
 </pre>   
     
     
-## 查看cpu，内存使用率    
+## 3.查看cpu，内存使用率    
 top     
     
 <pre>   

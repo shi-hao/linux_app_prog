@@ -153,11 +153,7 @@ drwxr-xr-x 12 root root 4096 May  3 19:46 ..         # Containing Directory
          one level up. Otherwise this will show a file or directory name.
 </pre>
 
-
-## 用户密码如何保存？
-
 ## 用户权限，用户组权限如何管理？
-
 
     
 ## add user    

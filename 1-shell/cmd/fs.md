@@ -1,6 +1,6 @@
 # file system      
     
-## 查看当前文件系统目录文件，ls-list      
+## 1.查看当前文件系统目录文件，ls-list      
 ls -l     
 total 12    
 drwxrwxr-x 3 bleach bleach 4096 Jul 14 14:43 cmd    
@@ -15,7 +15,7 @@ drwxrwxr-x 2 bleach bleach 4.0K Jun 28  2019 sed
 
 -h, --human-readable print sizes in human readable format (e.g., 1K 234M 2G)    
     
-## 查看文件占用大小，du-disk usage      
+## 2.查看文件占用大小，du-disk usage      
 du dir      
 du -h dir      
 
