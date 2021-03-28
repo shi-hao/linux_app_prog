@@ -1,2 +1,3 @@
+# config file
 age=20
 weight=50
