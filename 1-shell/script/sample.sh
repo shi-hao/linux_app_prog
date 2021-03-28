@@ -32,13 +32,6 @@ echo $sum
 echo "i am $name1"
 
 ####################################################
-#if
-if []; then
-echo $x
-else
-echo $y
-fi
-
 #check the dir in home path, if not exist, create it
 dirname="mmtest"
 fullDirName="$HOME/$dirname"
@@ -117,30 +110,6 @@ echo "数组的元素为: ${ip_array[@]}"
 echo "数组元素个数为: ${#ip_array[*]}"
 echo "数组元素个数为: ${#ip_array[@]}"
 
-##################################################3
-# 读取键盘输入
-echo "please inpute a int"
-read num
-echo "$num"
-
-####################
-# read txt file
-while read line
-do
-	echo $line
-done <./1.txt
-
-###################################3
-# Split string
-mystr="good bad ugly"
-
-# IFS--预定义的分隔符
-OLD_IFS=$IFS
-IFS=" " #将分隔符设置为空格
-arr=($mystr)
-echo ${arr[0]}
-echo ${arr[1]}
-IFS=$OLD_IFS #还原预定义的分割符号
 
 ##################################
 # shell参数
