@@ -5,7 +5,13 @@ ls -l
 total 12    
 drwxrwxr-x 3 bleach bleach 4096 Jul 14 14:43 cmd    
 drwxrwxr-x 2 bleach bleach 4096 May 22 17:47 script    
-drwxrwxr-x 2 bleach bleach 4096 Jun 28  2019 sed    
+drwxrwxr-x 2 bleach bleach 4096 Jun 28  2019 sed      
+
+drwxrwxr-x
+d表示文件夹
+rwxrwxr-x 
+表示对三个用户的权限，分别是owner，group，others，拥有者，组内成员，其他用户
+
     
 ls -lh    
 total 12K    
