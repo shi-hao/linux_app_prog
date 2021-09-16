@@ -18,4 +18,3 @@ date +%T -s "10:13:13"
 3. changing date
 
 date -s "2021-09-16 11:01:00"
-
