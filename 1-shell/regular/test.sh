@@ -22,4 +22,3 @@ echo '1920-09-10' | grep -E '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'
 # ([.][0-9]+)?
 # An optional period followed by one or more numbers.
 echo "2.5 test. test -50.8 4.90 88.0" | grep -Eo '[+-]?[0-9]+([.][0-9]+)?'
-
