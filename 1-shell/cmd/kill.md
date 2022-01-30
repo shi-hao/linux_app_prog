@@ -22,7 +22,7 @@ kill -l
 58) SIGRTMAX-6	59) SIGRTMAX-5	60) SIGRTMAX-4	61) SIGRTMAX-3	62) SIGRTMAX-2  
 63) SIGRTMAX-1	64) SIGRTMAX  
   
-#killall
+# killall
 和 kill 不同的是，killall 命令不再依靠 PID 来杀死单个进程，而是通过程序的进程名来杀死一类进程。  
 
 killall [pname]
