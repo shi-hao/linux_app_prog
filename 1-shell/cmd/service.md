@@ -1,4 +1,4 @@
-# service command  
+# service & systemctl    
   
 service - run a System V init script  
   
