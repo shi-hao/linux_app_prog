@@ -1,5 +1,3 @@
-# service & systemctl    
-  
 service - run a System V init script  
   
 service -SCRIPT-  -COMMAND-  [OPTIONS]  
@@ -12,5 +10,5 @@ service -SCRIPT-  -COMMAND-  [OPTIONS]
 	All scripts should support at least the start and stop commands.  
   
 FILES  
-       /etc/init.d  
-              The directory containing System V init scripts.  
+	/etc/init.d  
+	The directory containing System V init scripts.  
