@@ -1,9 +1,9 @@
 # win & ubuntu real time differ 8 hours  
   
-win10ubuntus双系统时间相差8⼩时  
-在使⽤双系统的过程中，博主遇到了遇见了意见令⼈头疼的事：每次打开Windows或者Linux时间都是错误的！  
-⽽且细⼼的博主还发现，每次的时间差都是8⼩时  
-作为⼀个强迫症，博主表⽰不能忍。那么，就让我们来解决这个问题吧  
+win10 & ubuntu双系统时间相差8⼩时  
+在使⽤双系统的过程中，博主遇到了遇见了一件令⼈头疼的事：每次打开Windows或者Linux时间都是错误的！  
+⽽且细⼼的博主还发现，每次的时间差都是8⼩时，作为⼀个强迫症，博主表⽰不能忍。  
+那么，就让我们来解决这个问题吧。  
   
 Why?  
 经过⼀番⾕歌，我很快找到了原因：  
@@ -19,20 +19,15 @@ GMT+8，则系统中显⽰时间是硬件时间+8。
 系统就会快了8⼩时。 在实⾏夏令时的地区，情况可能会更复杂些。  
 可以进入BIOS查看系统时间，亲测确实如此。  
   
-How to slove it?  
+How to solve it?  
 解决⽅案有两种：⼀种是对Windows下⼿，另⼀种则是对Linux下⼿。  
-Windows解决⽅案  
-进⼊  
-,在命令⾏中输⼊下⾯命令并回车  
-Win+R  
-cmd  
+
+Windows解决⽅案,win+R进⼊命令行,在命令⾏中输⼊下⾯命令并回车:    
 Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1  
   
 Linux解决⽅案  
 打开编辑⽂件/etc/default/rcS,  
 	sudo vi /etc/default/rcS  
-找到这⼀⾏  
-UTC=yes  
-把yes改为no,保存并退出  
+找到这⼀⾏，UTC=yes，把yes改为no,保存并退出。  
 如果说找不到UTC = yes 直接在terminal运⾏(本⼈亲测Ubuntu16.04),  
 	sudo timedatectl set-local-rtc 1  
