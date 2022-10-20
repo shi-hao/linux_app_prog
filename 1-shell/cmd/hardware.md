@@ -24,6 +24,9 @@ H/W path        Device      Class          Description
 /0/4c/0                     memory         [empty]  
 /0/4c/1                     memory         8GiB DIMM Synchronous 2133 MHz (0.5 ns)  
 </pre>  
+
+
+lshw -class disk
     
 ## 2.查看cpu详细信息    
 lscpu    
