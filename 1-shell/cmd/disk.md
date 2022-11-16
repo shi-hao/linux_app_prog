@@ -32,12 +32,12 @@ mount   <disk_partition>   <file_dir>
 umount  <disk_partition>          
           
 ## 4. disk usage  
-  
 磁盘使用情况统计，文件系统（磁盘分区）、使用百分比、挂载位置等。    
 df : disk free  
--h humanity    
--l  
+ -h humanity    
+ -l  
+ -T file system type
   
 统计磁盘使用的大小。    
 du : disk usage  
--h humanity  
+ -h humanity  
