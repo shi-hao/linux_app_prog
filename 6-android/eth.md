@@ -1,5 +1,5 @@
 
-How to config ethernet interface?
+# How to config ethernet interface?
 
 (1) root device, use shell ifconfig
 	need root tool 
