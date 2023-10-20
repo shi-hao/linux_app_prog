@@ -4,3 +4,5 @@
 
 2. use | and less, display the cmd output.
 
+3. use > output to file
+
