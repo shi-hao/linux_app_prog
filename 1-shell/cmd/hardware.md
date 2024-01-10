@@ -5,9 +5,11 @@ lscpu
 top
 
 ## 1.查看linux硬件信息，可能需要root权限    
-lshw    
-sudo lshw    
 sudo lshw -short  
+
+根据class信息，查看详细信息；
+
+sudo lshw -class system
    
 <pre>  
 H/W path        Device      Class          Description  
